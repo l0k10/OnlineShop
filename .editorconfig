@@ -1,0 +1,10 @@
+[*.cs]
+# StyleCop Rules
+dotnet_diagnostic.SA1633.severity = none  # File header
+dotnet_diagnostic.SA1200.severity = none  # Using directives placement
+dotnet_diagnostic.SA1309.severity = none  # Field names should not begin with underscore
+dotnet_diagnostic.SA1101.severity = none  # Prefix local calls with this
+dotnet_diagnostic.SA1413.severity = none  # Use trailing comma in multi-line initializers
+
+# Microsoft Rules
+dotnet_diagnostic.CA1062.severity = suggestion  # Validate arguments of public methods

@@ -1,0 +1,61 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio 2015/2017/2019/2022 cache/options directory
+.vs/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# SQLite databases
+*.db
+*.db-*
+
+# Entity Framework Migrations
+**/Migrations/
+
+# Test Coverage
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
+
+# SonarCloud
+.sonarqube/
+.sonar/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# Environment variables
+.env
+.env.local
