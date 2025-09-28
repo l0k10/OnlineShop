@@ -1,15 +1,29 @@
+using System.Reflection;
 using ProductCatalog.Api.Extensions;
 using ProductCatalog.Application;
 using ProductCatalog.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllers();
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Add services
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new()
+    {
+        Title = "Product Catalog API",
+        Version = "v1",
+        Description = "Product Catalog API for Online Shop DDD Learning Project"
+    });
+
+    // Include XML comments for better documentation
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFilename);
+    if (File.Exists(xmlPath))
+    {
+        c.IncludeXmlComments(xmlPath);
+    }
+});
 
 // Layer Dependencies
 builder.Services.AddApplication();
@@ -17,19 +31,23 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Product Catalog API v1");
+        c.RoutePrefix = string.Empty; // Swagger UI als Startseite
+    });
 }
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-
-app.MapControllers();
-
+// Map endpoints
 app.MapProductEndpoints();
 
 app.Run();
+
+// Make Program class accessible for testing
+public partial class Program { }

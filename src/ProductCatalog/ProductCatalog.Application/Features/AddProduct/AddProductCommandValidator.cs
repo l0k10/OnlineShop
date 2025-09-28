@@ -2,8 +2,14 @@
 
 namespace ProductCatalog.Application.Features.AddProduct;
 
+/// <summary>
+/// Validator for the AddProductCommand that ensures all required fields are valid.
+/// </summary>
 public class AddProductCommandValidator : AbstractValidator<AddProductCommand>
 {
+    /// <summary>
+    /// Initializes a new instance of the <see cref="AddProductCommandValidator"/> class.
+    /// </summary>
     public AddProductCommandValidator()
     {
         RuleFor(x => x.Name)

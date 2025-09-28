@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MediatR;
 
-namespace ProductCatalog.Application.Features.UpdateStock
-{
-    internal class UpdateStockCommand
-    {
-    }
-}
+namespace ProductCatalog.Application.Features.UpdateStock;
+
+/// <summary>
+/// Command to update the stock quantity of an existing product.
+/// </summary>
+/// <param name="ProductId">The unique identifier of the product.</param>
+/// <param name="NewStock">The new stock quantity.</param>
+public record UpdateStockCommand(
+    Guid ProductId,
+    int NewStock) : IRequest;
